@@ -1,0 +1,86 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void Btn_Start_m62DA4DD2BE341FB1D7F4252565D8D8A4CA91710F (void);
+extern void Btn_Update_mC53DAB03CD5553E2EA19C483C39A5A66DB27D2B2 (void);
+extern void Btn_YenidenBasla_mA260A2C869DC8B876F2B114586F0D70ADDAD6DA1 (void);
+extern void Btn__ctor_mC2AC613192C9EFC259010D434402BD9A66CD8346 (void);
+extern void Cikis_CikisYap_mAF3F93217EBC8FCBF33A53A93DD900EF36865AB1 (void);
+extern void Cikis__ctor_mFB72A48ADEE6B4CB0131FF9692350CB3F75F656D (void);
+extern void topcontrol_Start_mE0A283330C98257A0B91590D7DA5DEF592B5E196 (void);
+extern void topcontrol_Update_mF79992F9BB6D08A283ECE5F16BE1A056F3D92181 (void);
+extern void topcontrol_FixedUpdate_m4E15BC484D0D4EA515E072F555615460FAE55CAD (void);
+extern void topcontrol_OnCollisionEnter_m0317DAA735A6126A52E36B3199522E3DD60B6F8B (void);
+extern void topcontrol_OyunuKazandiniz_mAF9BA4F9522A9DB93C50E3909A76C71C7836D19B (void);
+extern void topcontrol_OyunuKaybet_m800E04800D1955803C54C4C4B26F37ADE038A83D (void);
+extern void topcontrol__ctor_mD626551086BAB11CBF602141A34DEC0D47111266 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
+static Il2CppMethodPointer s_methodPointers[15] = 
+{
+	Btn_Start_m62DA4DD2BE341FB1D7F4252565D8D8A4CA91710F,
+	Btn_Update_mC53DAB03CD5553E2EA19C483C39A5A66DB27D2B2,
+	Btn_YenidenBasla_mA260A2C869DC8B876F2B114586F0D70ADDAD6DA1,
+	Btn__ctor_mC2AC613192C9EFC259010D434402BD9A66CD8346,
+	Cikis_CikisYap_mAF3F93217EBC8FCBF33A53A93DD900EF36865AB1,
+	Cikis__ctor_mFB72A48ADEE6B4CB0131FF9692350CB3F75F656D,
+	topcontrol_Start_mE0A283330C98257A0B91590D7DA5DEF592B5E196,
+	topcontrol_Update_mF79992F9BB6D08A283ECE5F16BE1A056F3D92181,
+	topcontrol_FixedUpdate_m4E15BC484D0D4EA515E072F555615460FAE55CAD,
+	topcontrol_OnCollisionEnter_m0317DAA735A6126A52E36B3199522E3DD60B6F8B,
+	topcontrol_OyunuKazandiniz_mAF9BA4F9522A9DB93C50E3909A76C71C7836D19B,
+	topcontrol_OyunuKaybet_m800E04800D1955803C54C4C4B26F37ADE038A83D,
+	topcontrol__ctor_mD626551086BAB11CBF602141A34DEC0D47111266,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
+};
+static const int32_t s_InvokerIndices[15] = 
+{
+	4666,
+	4666,
+	4666,
+	4666,
+	4666,
+	4666,
+	4666,
+	4666,
+	4666,
+	3771,
+	4666,
+	4666,
+	4666,
+	6837,
+	4666,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	15,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
