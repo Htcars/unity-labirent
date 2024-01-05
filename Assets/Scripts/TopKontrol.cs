@@ -7,23 +7,27 @@ using UnityEngine.UI;
 public class topcontrol : MonoBehaviour
 {
     public Button btn;
-    private Rigidbody rb;
-    public float Hiz = 3f;
-    public float zamanSayaci = 10;
-    public float canSayaci = 2;
+    
+    public float Hiz = 1;
+    public float donusHizi = 1f;
+    public float zamanSayaci = 500;
+    public float canSayaci = 50;
     public Text zamanText, canText, durum;
     bool oyunDevam = true;
     bool oyunTamam = false;
+    public static int skor;
+    public Text skorText;
     //public static Button restart;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        skor = 0;
     }
     
     void Update()
     {
+        skorText.text = skor.ToString();
         if (zamanSayaci > 0 && oyunDevam && !oyunTamam)
         {
             zamanSayaci -= Time.deltaTime;
@@ -54,12 +58,25 @@ public class topcontrol : MonoBehaviour
     {
         if (oyunDevam && !oyunTamam)
         {
-            float yatay = Input.GetAxis("Horizontal");
-            float dikey = Input.GetAxis("Vertical");
-            Vector3 kuvvet = new Vector3(-dikey, 0, -yatay);
-            rb.AddForce(kuvvet * Hiz);
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                transform.Translate(new Vector3(0,0,1 * Hiz * Time.deltaTime));
+                
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                transform.Rotate(0, 90*donusHizi*Time.deltaTime, 0);
+            }
+
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                transform.Rotate(0, -90 * donusHizi * Time.deltaTime, 0);
+            }
+
+
         }
     }
+
 
     private void OnCollisionEnter(Collision other)
     {
@@ -75,6 +92,7 @@ public class topcontrol : MonoBehaviour
         else if (!ObjIsmi.Equals("Zemin") && !ObjIsmi.Equals("Labirentzemin") && !ObjIsmi.Equals("Baslangic") && !ObjIsmi.Equals("Bitis"))
         {
             canSayaci -= 1;
+            
             canText.text = canSayaci.ToString();
             if (canSayaci <= 0)
             {

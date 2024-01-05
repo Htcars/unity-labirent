@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Duvar
+  - coin
   layers:
   - Default
   - TransparentFX
